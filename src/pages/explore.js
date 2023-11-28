@@ -267,16 +267,16 @@ const Explore = () => {
         </div>
       </div>
       <MapView1 />
-      <img
+      {/* <img
         className="absolute top-[0px] left-[0px] w-[359px] h-[400px] object-cover"
         alt=""
         src="/image-7@2x.png"
-      />
-      <img
+      /> */}
+      {/* <img
         className="absolute top-[715px] left-[257px] w-[118px] h-[97px] object-cover"
         alt=""
         src="/image-71@2x.png"
-      />
+      /> */}
       <div className="absolute top-[35px] left-[10px] w-[284px] h-11 text-mini text-lightslategray">
         <div className="absolute top-[0px] left-[0px] w-[284px] h-11 overflow-hidden">
           <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">

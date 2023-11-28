@@ -8,7 +8,7 @@ const NewBooking = () => {
   const navigate = useNavigate();
 
   const onSignUpContainer2Click = useCallback(() => {
-    navigate("/26-my-bookings");
+    navigate("/23-explore");
   }, [navigate]);
 
   const onTripsContainerClick = useCallback(() => {
