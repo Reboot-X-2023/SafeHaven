@@ -1,0 +1,66 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "secondary-100": "#f04d23",
+        "base-white": "#fff",
+        "base-gray-80": "#4a5660",
+        "base-gray-40": "#b5bec6",
+        snow: "#fbf7f4",
+        deepskyblue: "#41b3e6",
+        black: "#000",
+        sienna: {
+          "100": "#b0582a",
+          "200": "rgba(176, 88, 42, 0.33)",
+        },
+        orange: {
+          "100": "#faa629",
+          "200": "#ff9900",
+        },
+        darkslategray: "#222b45",
+        lightslategray: "#8f9bb3",
+        aliceblue: "#e4e9f2",
+        gainsboro: "#d9d9d9",
+        darkgray: "#979797",
+        dimgray: "#50555c",
+        gray: "#030303",
+        lightgray: "rgba(210, 213, 219, 0.9)",
+      },
+      spacing: {},
+      fontFamily: {
+        h4: "'Avenir Next LT Pro'",
+        "league-spartan": "'League Spartan'",
+        abeezee: "ABeeZee",
+      },
+      borderRadius: {
+        "10xl": "29px",
+        "81xl": "100px",
+        "51xl": "70px",
+        "56xl": "75px",
+        "29xl": "48px",
+        "11xs-3": "1.3px",
+        "10xs-7": "2.7px",
+        "8xs": "5px",
+      },
+    },
+    fontSize: {
+      base: "16px",
+      "3xs": "10px",
+      "9xl": "28px",
+      "5xl": "24px",
+      smi: "13px",
+      mini: "15px",
+      xl: "20px",
+      "4xs": "9px",
+      sm: "14px",
+      "6xl": "25px",
+      "4xl": "23px",
+      inherit: "inherit",
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
