@@ -3,12 +3,17 @@ import { useNavigate } from "react-router-dom";
 import ListingCard2 from "../components/listing-card2";
 import ListingCard1 from "../components/listing-card1";
 import MapView1 from "../components/map-view1";
+import mappage from "./mappage";
 
 const Explore = () => {
   const navigate = useNavigate();
 
   const onListing1ContainerClick = useCallback(() => {
     navigate("/231-listing-1");
+  }, [navigate]);
+
+  const onmappageContainerClick = useCallback(() => {
+    navigate("/mappage");
   }, [navigate]);
 
   const onListing2ContainerClick = useCallback(() => {
@@ -21,14 +26,14 @@ const Explore = () => {
 
   return (
     <div className="relative bg-snow w-full h-[812px] overflow-y-auto text-left text-smi text-black font-league-spartan">
-      <img
+      {/* <img
         className="absolute top-[682px] left-[549px] w-[350px] h-[329px] object-cover"
         alt=""
         src="/image-4@2x.png"
-      />
+      /> */}
       <div
         className="absolute top-[118px] left-[0px] w-[375px] h-[395px] overflow-hidden cursor-pointer text-dimgray"
-        onClick={onListing1ContainerClick}
+        
       >
         <div className="absolute top-[5px] left-[12px] rounded-51xl bg-base-white w-[352px] h-[383px]" />
         <div className="absolute top-[273px] left-[248px] leading-[24px] font-medium inline-block w-[296px] h-6">
@@ -39,7 +44,8 @@ const Explore = () => {
           alt=""
           src="/image-25@2x.png"
         />
-        <div className="absolute top-[244px] left-[39px] text-xl leading-[24px] font-medium text-black inline-block w-[304px] h-[39px]">
+        <div className="absolute top-[244px] left-[39px] text-xl leading-[24px] font-medium text-black inline-block w-[304px] h-[39px]"
+        onClick={onListing2ContainerClick}>
           Cosy double room in Manchester City Centre
         </div>
         <div className="absolute top-[5px] left-[246px] w-[100px] h-[103.1px] overflow-hidden">
@@ -57,7 +63,7 @@ const Explore = () => {
           <span> (4.98 )</span>
         </div>
         <div className="absolute top-[297px] left-[232px] leading-[24px] font-medium inline-block w-[107px] h-[26px] text-deepskyblue">
-          <span>0.2 miles</span>
+          <span onClick={onmappageContainerClick}>0.2 miles</span>
           <span className="text-darkgray"> from you</span>
         </div>
         <img
@@ -137,7 +143,7 @@ const Explore = () => {
       </div>
       <div
         className="absolute top-[513px] left-[0px] w-[375px] h-[395px] overflow-hidden cursor-pointer text-dimgray"
-        onClick={onListing2ContainerClick}
+        
       >
         <div className="absolute top-[5px] left-[10px] rounded-51xl bg-base-white w-[353px] h-[383px]" />
         <div className="absolute top-[273px] left-[248px] leading-[24px] font-medium inline-block w-[296px] h-6">
@@ -244,8 +250,8 @@ const Explore = () => {
           />
         </div>
       </div>
-      <ListingCard2 />
-      <ListingCard1 />
+      {/* <ListingCard2 />
+      <ListingCard1 /> */}
       <div className="absolute top-[84px] left-[12px] text-mini leading-[20px] inline-block w-[223px] h-[18px]">
         <span className="font-medium">Showing results for “</span>
         <b>Manchester</b>
@@ -276,7 +282,7 @@ const Explore = () => {
         className="absolute top-[715px] left-[257px] w-[118px] h-[97px] object-cover"
         alt=""
         src="/image-71@2x.png"
-      /> */}
+      /> */}                                                                       
       <div className="absolute top-[35px] left-[10px] w-[284px] h-11 text-mini text-lightslategray">
         <div className="absolute top-[0px] left-[0px] w-[284px] h-11 overflow-hidden">
           <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
@@ -290,62 +296,7 @@ const Explore = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[767px] left-[0px] w-[375px] h-[46px] overflow-hidden text-center text-3xs">
-        <div className="absolute top-[2px] left-[0px] bg-snow w-[375px] h-11" />
-        <div className="absolute top-[4px] left-[95px] w-10 h-[42px] overflow-hidden">
-          <div className="absolute top-[29px] left-[-6px] leading-[24px] font-medium flex items-center justify-center w-[53px] h-2.5">
-            Saved
-          </div>
-          <img
-            className="absolute top-[4px] left-[11px] w-5 h-5 object-cover"
-            alt=""
-            src="/image-30@2x.png"
-          />
-        </div>
-        <div
-          className="absolute top-[4px] left-[168px] w-10 h-[42px] overflow-hidden cursor-pointer"
-          onClick={onTripsContainerClick}
-        >
-          <div className="absolute top-[29px] left-[-6px] leading-[24px] font-medium flex items-center justify-center w-[53px] h-2.5">
-            Bookings
-          </div>
-          <img
-            className="absolute top-[4px] left-[11px] w-5 h-5 object-cover"
-            alt=""
-            src="/image-301@2x.png"
-          />
-        </div>
-        <div className="absolute top-[4px] left-[241px] w-10 h-[42px] overflow-hidden">
-          <div className="absolute top-[29px] left-[-6px] leading-[24px] font-medium flex items-center justify-center w-[53px] h-2.5">
-            Messages
-          </div>
-          <img
-            className="absolute top-[4px] left-[11px] w-5 h-5 object-cover"
-            alt=""
-            src="/image-302@2x.png"
-          />
-        </div>
-        <div className="absolute top-[4px] left-[314px] w-10 h-[42px] overflow-hidden">
-          <div className="absolute top-[29px] left-[-6px] leading-[24px] font-medium flex items-center justify-center w-[53px] h-2.5">
-            Profile
-          </div>
-          <img
-            className="absolute top-[3px] left-[8px] w-6 h-6 object-cover"
-            alt=""
-            src="/image-303@2x.png"
-          />
-        </div>
-        <div className="absolute top-[4px] left-[22px] w-10 h-[42px] overflow-hidden text-deepskyblue">
-          <div className="absolute top-[29px] left-[-6px] leading-[24px] font-medium flex items-center justify-center w-[53px] h-2.5">
-            Explore
-          </div>
-          <img
-            className="absolute top-[4px] left-[11px] w-5 h-5 object-cover"
-            alt=""
-            src="/mask-group@2x.png"
-          />
-        </div>
-      </div>
+      
       <div className="absolute top-[1749px] left-[0px] bg-gainsboro w-[375px] h-[49px]" />
     </div>
   );

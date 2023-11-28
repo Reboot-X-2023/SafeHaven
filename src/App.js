@@ -16,6 +16,7 @@ import Listing1 from "./pages/listing1";
 import SplashScreen from "./pages/splash-screen";
 import HomeScreen from "./pages/home-screen";
 import ExternalSymbols from "./pages/external-symbols";
+import mappage from "./pages/mappage";
 
 function App() {
   const action = useNavigationType();
@@ -106,6 +107,7 @@ function App() {
       <Route path="/0-splash-screen" element={<SplashScreen />} />
       <Route path="/1-home-screen" element={<HomeScreen />} />
       <Route path="/external-symbols" element={<ExternalSymbols />} />
+      <Route path="/mappage" element={<mappage />} />
     </Routes>
   );
 }
