@@ -17,11 +17,11 @@ const MyBookings = () => {
         src="/image-4@2x.png"
       />
       <ListingCard />
-      <img
+      {/* <img
         className="absolute top-[0px] left-[0px] w-[359px] h-[400px] object-cover"
         alt=""
         src="/image-7@2x.png"
-      />
+      /> */}
       <img
         className="absolute top-[715px] left-[257px] w-[118px] h-[97px] object-cover"
         alt=""

@@ -17,11 +17,11 @@ const NewBooking = () => {
 
   return (
     <div className="relative bg-snow w-full h-[812px] overflow-hidden text-center text-5xl text-black font-league-spartan">
-      <img
+      {/* <img
         className="absolute top-[728px] left-[266px] w-[243px] h-[239px] object-cover"
         alt=""
         src="/image-31@2x.png"
-      />
+      /> */}
       <div className="absolute top-[74px] left-[20px] rounded-51xl bg-base-white w-[335px] h-[665px]" />
       <div
         className="absolute top-[666px] left-[91px] rounded-81xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-[194px] h-[58px] overflow-hidden cursor-pointer text-base-white"
@@ -134,11 +134,11 @@ const NewBooking = () => {
       </b>
       <div className="absolute top-[603px] left-[52px] text-xl font-medium text-left flex items-center w-[280px] h-10">{`Thursday 19th September at Ashley’s `}</div>
       <div className="absolute top-[-555px] left-[-187px] w-[562px] h-[664px]">
-        <img
+        {/* <img
           className="absolute top-[555px] left-[187px] w-[415px] h-[664px] object-cover"
           alt=""
           src="/image-21@2x.png"
-        />
+        /> */}
         <IPhoneXStatusBarsStatusBa
           cap="/cap.svg"
           showIPhoneXStatusBarsStatusBa={false}
